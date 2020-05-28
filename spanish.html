@@ -1,0 +1,87 @@
+<html>
+    <style>
+    input {
+    font-size: 14px;
+    color: #red;
+    background-color: #f7f7f7;
+    width: 54%;
+    padding: 5px 5px 8px 8px;
+    background: #fff;
+    border: 3px solid #2980b9;
+    outline: none;
+    }
+    label {
+    display:inline-block;
+    *display: inline;     /* for IE7*/
+    zoom:1;              /* for IE7*/
+    float: left;
+    padding-top: 5px;
+    text-align: right;
+    width: 140px;
+    }
+    body{
+        background-color: powderblue;
+    }
+    h1{
+        text-align: center;
+        font-family: sans-serif;
+        text-decoration: underline;
+    }
+    button{
+        text-transform: uppercase;
+        font-weight: bold;
+        display: block;
+        margin: 30px auto;
+        background: #AD133A;
+        border-radius: 5px;
+        width: 200px;
+        height: 50px;
+        font-size: 17px;
+        color: white;
+    }
+    .container{
+        height: 525px;
+        width: 360px;
+        margin: 100px auto;
+        background: #f7f7f7;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+    }
+    .answer{
+        font-size: 30px;
+        margin-top: 5px;
+        text-align: center;
+    }
+    .answer small{
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        bottom: -60px;
+    }
+    .answer sup{
+        font-size: 20px;
+        top: -18px;
+    }
+    </style>
+    <body>
+        <div class = "container">
+            <h1> Spanish Accent Finder </h1>
+            <div class="AccFinder">
+                <div class="block">
+                    <label> Spanish Word :  </label>
+                    <input type="String" id="inpWord" />
+                </div>
+            <div>
+                <button type="button" id="AccFind">Locate</button>
+            </div>
+            <div class = "Location of Accents">
+            <span>Accents over letter : </span>
+            <span id="LocAcc"></span>
+           </div> 
+            </div>
+       </div> 
+    </body>
+    <script src="./accfinder.js"></script>
+</html>
